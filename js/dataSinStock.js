@@ -1,7 +1,7 @@
 var cards = document.getElementById('cards')
 const templateCard = document.getElementById('template-card').content
 var fragment = document.createDocumentFragment()
-const data = "C:\Users\welli\Documents\VSCode\Gilda Pagina Oficial\BackEnd\src\public\baseDatosRopa.json"
+
 //llamar localStorage
 document.addEventListener('DOMContentLoaded', e => { 
     fetchData() 
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
 // Traer productos
 const fetchData = async () => {
-    const res = await fetch(data);
+    const res = await fetch("https://raw.githubusercontent.com/willy4320/ApiRopas/main/src/public/baseDatosRopa.json");
     const data = await res.json()
     console.log('fullProducto:', data)
     pintarCards(data)
