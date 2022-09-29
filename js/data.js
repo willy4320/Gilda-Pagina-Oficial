@@ -6,13 +6,16 @@ document.addEventListener('DOMContentLoaded', e => {
     fetchData()
 });
 
+
+
 // Traer productos
+const prod = "https://api-ropas-deploy.onrender.com/baseDatosRopa.json"
 const fetchData = async () => {
-    const res = await fetch("https://raw.githubusercontent.com/willy4320/ApiRopas/main/src/public/baseDatosRopa.json");
+    const res = await fetch(prod);
     const data = await res.json()
 
 
-    console.log('fullProducto:', data)
+    console.log('Productos:', data)
 
     //gerenciarStock(data, 10, 30)
     pintarCards(data)
