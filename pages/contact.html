@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
+
+  <body>
+    <section id="header">
+      <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+      <a href="#"><img src="../img/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="shop.html">Productos</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="https://api-ropas-nodejs.herokuapp.com">Inventario</a></li>
+          <li id="cart-desktop">
+            <a id="sideCart"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+          <a href="#" id="leave"><i class="fas fa-outdent"></i></a>
+        </ul>
+      </div>
+
+      <div id="mobileCart">
+        <a id="sideCart2"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </section>
+
+    <section id="preCarrito">
+      <h4 class="leave2" id="leave2">X</h4>
+      <h3>Tu Carrito</h3>
+
+      <div id="preCol">
+        <template id="template-precarrito">
+          <div class="preProductos">
+            <div class="row1">
+              <img src="../img/productos/ropa1.jpg" alt="" />
+              <div class="col2">
+                <h5 class="titulo">Titulo Producto</h5>
+                <div class="subRow">
+                  <p class="cant">1</p>
+                  <p>un</p>
+                  <button class="btn-info">+</button>
+                  <button class="btn-danger">-</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row2">
+              <p class="subtotal">20</p>
+
+              <button class="normal btn-eliminar">Eliminar</button>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <footer id="footerCarrito">Carrito Vacio</footer>
+      <template id="template-footer">
+        <th scope="row" colspan="2">Total productos:</th>
+        <td>10</td>
+        <td>
+          <button class="btn btn-danger btn-sm normal" id="vaciar-carrito">
+            vaciar todo
+          </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+
+      <div class="carritoLink">
+        <a href="cart.html"><button class="normal">Continuar</button></a>
+      </div>
+    </section>
+
+    <div id="subtotal" style="display: none">
+      <h3>Total Carrito</h3>
+      <table id="footer3">
+        <template id="template-finalizar">
+          <tr>
+            <td><strong>Cantidad De Productos</strong></td>
+            <td><strong class="cantidadProductos">5</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td>
+              <strong>$</strong> <strong class="totalCarrito"> 340</strong>
+            </td>
+          </tr>
+        </template>
+      </table>
+      <button class="normal">Finalizar Compra</button>
+    </div>
+
+    <section id="page-header">
+      <h2>#Contacto</h2>
+      <p>En desarrollo</p>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Registro</h4>
+        <p>
+          Obtendras mails sobre ofertas en la pagina<span
+            >ofertas especiales</span
+          >
+        </p>
+      </div>
+
+      <div class="form">
+        <input type="text" placeholder="Ingrese el mail aqui" />
+        <button class="normal">Registrate</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="info">
+        <div class="col">
+          <h4>Contacto</h4>
+
+          <p class="social-media">
+            <a href="https://www.facebook.com/ropaencaje/"
+              >Facebook: www.facebook.com/ropaencaje</a
+            >
+          </p>
+
+          <p class="social-media">
+            <a href="#">WhatsApp: </a>
+          </p>
+
+          <p>Horario: 09:00 - 18:00, Lun - Vi</p>
+        </div>
+
+        <div class="col">
+          <h4>Cuentas</h4>
+          <a href="#">Login</a>
+          <a href="#">Mi Carrito</a>
+          <a href="#">Mis Favoritos</a>
+          <a href="#">Ayuda</a>
+        </div>
+
+        <div class="col">
+          <h4>Sobre</h4>
+          <a href="#">Vendedora</a>
+          <a href="#">Tienda</a>
+          <a href="#">Datos Bancarios</a>
+        </div>
+
+        <div class="col">
+          <h4>Productos</h4>
+          <a href="#">Estilo de ropa</a>
+          <a href="#">Estilo de ropa</a>
+          <a href="#">Estilo de ropa</a>
+        </div>
+
+        <div class="copyright">
+          creado por <span>welliton da costa</span> | copyright &copy;2022
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

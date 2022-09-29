@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
+
+  <body>
+    <section id="header">
+      <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+      <a href="#"><img src="../img/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="shop.html">Productos</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="">Login</a></li>
+          <li>
+            <a href="https://api-ropas-nodejs.herokuapp.com">Inventario</a>
+          </li>
+          <li id="cart-desktop">
+            <a href="cart.html" class="active"
+              ><i class="fas fa-shopping-cart"></i
+            ></a>
+          </li>
+
+          <a href="#" id="leave"><i class="fas fa-outdent"></i></a>
+        </ul>
+      </div>
+
+      <div id="mobileCart">
+        <li>
+          <a href="cart.html" class="active"
+            ><i class="fas fa-shopping-cart"></i
+          ></a>
+        </li>
+      </div>
+    </section>
+
+    <section id="page-header">
+      <h2>#Carrito</h2>
+      <p>En desarrollo</p>
+    </section>
+
+    <section id="preCarrito">
+      <style>
+        #preCarrito {
+          display: inline;
+          background: #e3e6f3;
+          position: relative;
+          right: 0px;
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        #preCarrito .carritoLink {
+          background: #e2e4eb;
+        }
+
+        #preCarrito h3 {
+          padding-top: 30px;
+          background: #e2e4eb;
+        }
+        #preCol {
+          padding: 20px 200px;
+        }
+
+        #preCol .row2 button {
+          background: #e2e4eb;
+          color: #000;
+        }
+
+        #footerCarrito {
+          background: #e2e4eb;
+        }
+
+        @media (max-width: 1045px) {
+          #preCol {
+            padding: 20px 100px;
+          }
+        }
+
+        @media (max-width: 700px) {
+          #preCol {
+            padding: 0px 0px;
+          }
+        }
+      </style>
+      <h3>Tu Carrito</h3>
+
+      <div id="preCol">
+        <template id="template-precarrito">
+          <div class="preProductos">
+            <div class="row1">
+              <img src="../img/productos/ropa1.jpg" alt="" />
+              <div class="col2">
+                <h5 class="titulo">Titulo Producto</h5>
+                <h6 class="talla">Talla Producto</h6>
+                <div class="subRow">
+                  <p class="cant">1</p>
+                  <p>un</p>
+                  <button class="btn-info">+</button>
+                  <button class="btn-danger">-</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row2">
+              <p class="subtotal">20</p>
+
+              <button class="normal btn-eliminar">Eliminar</button>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <footer id="footerCarrito">Carrito Vacio</footer>
+      <template id="template-footer">
+        <th scope="row" colspan="2">Total productos:</th>
+        <td>10</td>
+        <td>
+          <button class="btn btn-danger btn-sm normal" id="vaciar-carrito">
+            vaciar todo
+          </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+      <div id="coupon" style="display: none">
+        <h3>Aplicar Cupon</h3>
+        <div>
+          <input type="text" placeholder="Agregue su cupon" />
+          <button class="normal">Aplicar</button>
+        </div>
+      </div>
+
+      <div id="subtotal">
+        <h3>Total Carrito</h3>
+        <table id="footer3">
+          <template id="template-finalizar">
+            <tr>
+              <td><strong>Cantidad De Productos</strong></td>
+              <td><strong class="cantidadProductos">5</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td>
+                <strong>$</strong> <strong class="totalCarrito"> 340</strong>
+              </td>
+            </tr>
+          </template>
+        </table>
+        <button id="finalizarCompra" class="normal finalizarCompra">
+          Finalizar Compra
+        </button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="info">
+        <div class="col">
+          <h4>Contacto</h4>
+
+          <p class="social-media">
+            <a href="https://www.facebook.com/ropaencaje/"
+              >Facebook: www.facebook.com/ropaencaje</a
+            >
+          </p>
+
+          <p class="social-media">
+            <a href="#">WhatsApp: </a>
+          </p>
+
+          <p>Horario: 09:00 - 18:00, Lun - Vi</p>
+        </div>
+
+        <div class="col">
+          <h4>Cuentas</h4>
+          <a href="#">Login</a>
+          <a href="#">Mi Carrito</a>
+          <a href="#">Mis Favoritos</a>
+          <a href="#">Ayuda</a>
+        </div>
+
+        <div class="col">
+          <h4>Sobre</h4>
+          <a href="#">Vendedora</a>
+          <a href="#">Tienda</a>
+          <a href="#">Datos Bancarios</a>
+        </div>
+
+        <div class="col">
+          <h4>Productos</h4>
+          <a href="#">Estilo de ropa</a>
+          <a href="#">Estilo de ropa</a>
+          <a href="#">Estilo de ropa</a>
+        </div>
+
+        <div class="copyright">
+          creado por <span>welliton da costa</span> | copyright &copy;2022
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/carritoFinal.js"></script>
+  </body>
+</html>
